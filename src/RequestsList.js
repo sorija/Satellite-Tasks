@@ -1,5 +1,6 @@
 import React from "react";
 import Request from "./Request.js";
+import { connect } from "react-redux";
 
 class RequestsList extends React.Component {
   constructor(props) {
@@ -80,4 +81,7 @@ class RequestsList extends React.Component {
     );
   }
 }
-export default RequestsList;
+const mapStateToProps = state => {
+  return { requests: state.requests };
+};
+export default connect(mapStateToProps)(RequestsList);
