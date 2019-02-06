@@ -1,7 +1,7 @@
 import React from "react";
-import Task from "./Task.js";
+import Request from "./Request.js";
 
-class TasksList extends React.Component {
+class RequestsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,16 +11,16 @@ class TasksList extends React.Component {
   handlePageChange(pageNum) {
     return () => this.setState({ currentPage: pageNum });
   }
-  divideTasks = () => {
+  divideRequests = () => {
     let startIndex = (this.state.currentPage - 1) * 5;
     let endIndex = this.state.currentPage * 5;
-    return this.props.tasks.slice(startIndex, endIndex);
+    return this.props.requests.slice(startIndex, endIndex);
   };
 
   render() {
     const { currentPage } = this.state;
-    // number of pages is equal to number of tasks divided by limit of tasks per page and rounded up
-    const length = this.props.tasks.length / 5;
+    // number of pages is equal to number of requests divided by limit of requests per page and rounded up
+    const length = this.props.requests.length / 5;
     const pagination = Array.from(
       { length: Math.ceil(length) },
       (_, i) => i + 1
@@ -28,9 +28,9 @@ class TasksList extends React.Component {
     return (
       <div>
         <ul>
-          {this.divideTasks().map(task => (
-            <li key={task.id}>
-              <Task {...task} />
+          {this.divideRequests().map(request => (
+            <li key={request.id}>
+              <Request {...request} />
             </li>
           ))}
         </ul>
@@ -80,4 +80,4 @@ class TasksList extends React.Component {
     );
   }
 }
-export default TasksList;
+export default RequestsList;

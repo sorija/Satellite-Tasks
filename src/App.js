@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 // import { Provider } from "react-redux";
-import TasksList from "./TasksList.js";
+import RequestsList from "./RequestsList.js";
 import "./styles/App.css";
 
-const tasks = [
+const requests = [
   {
     id: 0,
     satName: "Alderan",
@@ -83,7 +83,7 @@ class App extends Component {
         <header className="App-header">
           <p>Hello Space!</p>
         </header>
-        <TasksList tasks={tasks} />
+        <RequestsList requests={requests} />
       </div>
     );
   }
