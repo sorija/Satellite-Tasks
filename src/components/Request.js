@@ -11,4 +11,5 @@ const Request = ({ id, satName, start, end, status }) => (
     </ul>
   </React.Fragment>
 );
+
 export default Request;
