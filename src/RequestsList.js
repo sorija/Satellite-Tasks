@@ -1,7 +1,7 @@
 import React from "react";
 import Request from "./Request.js";
 import { connect } from "react-redux";
-import { setCurrentPage } from "./actions/paginationActions.js";
+import Pagination from "./Pagination.js";
 
 class RequestsList extends React.Component {
   divideRequests = () => {
@@ -11,13 +11,6 @@ class RequestsList extends React.Component {
   };
 
   render() {
-    const { currentPage, requests, setCurrentPage } = this.props;
-    // number of pages is equal to number of requests divided by limit of requests per page and rounded up
-    const length = requests.length / 5;
-    const pagination = Array.from(
-      { length: Math.ceil(length) },
-      (_, i) => i + 1
-    );
     return (
       <div>
         <ul>
@@ -28,46 +21,7 @@ class RequestsList extends React.Component {
           ))}
         </ul>
         <footer>
-          <div>
-            <button
-              type="button"
-              disabled={currentPage === 1}
-              onClick={() => setCurrentPage(1)}
-            >
-              &laquo;
-            </button>
-            <button
-              type="button"
-              disabled={currentPage === 1}
-              onClick={() => setCurrentPage(currentPage - 1)}
-            >
-              &lt;
-            </button>
-            {pagination.map(page => (
-              <button
-                key={page}
-                type="button"
-                disabled={currentPage === page}
-                onClick={() => setCurrentPage(page)}
-              >
-                {page}
-              </button>
-            ))}
-            <button
-              type="button"
-              disabled={currentPage === pagination.length}
-              onClick={() => setCurrentPage(currentPage + 1)}
-            >
-              &gt;
-            </button>
-            <button
-              type="button"
-              disabled={currentPage === pagination.length}
-              onClick={() => setCurrentPage(pagination.length)}
-            >
-              &raquo;
-            </button>
-          </div>
+          <Pagination />
         </footer>
       </div>
     );
@@ -80,11 +34,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchtoProps = dispatch => ({
-  setCurrentPage: page => dispatch(setCurrentPage(page))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchtoProps
-)(RequestsList);
+export default connect(mapStateToProps)(RequestsList);
