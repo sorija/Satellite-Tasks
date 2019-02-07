@@ -1,4 +1,4 @@
-const requestsReducerDefaults = [
+const requestsDefaults = [
   {
     id: 0,
     satName: "Alderan",
@@ -71,7 +71,7 @@ const requestsReducerDefaults = [
   }
 ];
 
-const requestsReducer = (state = requestsReducerDefaults, action) => {
+const requestsReducer = (state = requestsDefaults, action) => {
   return state;
 };
 

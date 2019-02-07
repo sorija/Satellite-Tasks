@@ -1,27 +1,19 @@
 import React from "react";
 import Request from "./Request.js";
 import { connect } from "react-redux";
+import { setCurrentPage } from "./actions/paginationActions.js";
 
 class RequestsList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentPage: 1
-    };
-  }
-  handlePageChange(pageNum) {
-    return () => this.setState({ currentPage: pageNum });
-  }
   divideRequests = () => {
-    let startIndex = (this.state.currentPage - 1) * 5;
-    let endIndex = this.state.currentPage * 5;
+    let startIndex = (this.props.currentPage - 1) * 5;
+    let endIndex = this.props.currentPage * 5;
     return this.props.requests.slice(startIndex, endIndex);
   };
 
   render() {
-    const { currentPage } = this.state;
+    const { currentPage, requests, setCurrentPage } = this.props;
     // number of pages is equal to number of requests divided by limit of requests per page and rounded up
-    const length = this.props.requests.length / 5;
+    const length = requests.length / 5;
     const pagination = Array.from(
       { length: Math.ceil(length) },
       (_, i) => i + 1
@@ -40,14 +32,14 @@ class RequestsList extends React.Component {
             <button
               type="button"
               disabled={currentPage === 1}
-              onClick={this.handlePageChange(1)}
+              onClick={() => setCurrentPage(1)}
             >
               &laquo;
             </button>
             <button
               type="button"
               disabled={currentPage === 1}
-              onClick={this.handlePageChange(currentPage - 1)}
+              onClick={() => setCurrentPage(currentPage - 1)}
             >
               &lt;
             </button>
@@ -55,8 +47,8 @@ class RequestsList extends React.Component {
               <button
                 key={page}
                 type="button"
-                disabled={page === currentPage}
-                onClick={this.handlePageChange(page)}
+                disabled={currentPage === page}
+                onClick={() => setCurrentPage(page)}
               >
                 {page}
               </button>
@@ -64,14 +56,14 @@ class RequestsList extends React.Component {
             <button
               type="button"
               disabled={currentPage === pagination.length}
-              onClick={this.handlePageChange(currentPage + 1)}
+              onClick={() => setCurrentPage(currentPage + 1)}
             >
               &gt;
             </button>
             <button
               type="button"
               disabled={currentPage === pagination.length}
-              onClick={this.handlePageChange(pagination.length)}
+              onClick={() => setCurrentPage(pagination.length)}
             >
               &raquo;
             </button>
@@ -82,6 +74,17 @@ class RequestsList extends React.Component {
   }
 }
 const mapStateToProps = state => {
-  return { requests: state.requests };
+  return {
+    requests: state.requests,
+    currentPage: state.currentPage
+  };
 };
-export default connect(mapStateToProps)(RequestsList);
+
+const mapDispatchtoProps = dispatch => ({
+  setCurrentPage: page => dispatch(setCurrentPage(page))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchtoProps
+)(RequestsList);
