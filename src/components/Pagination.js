@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { setCurrentPage } from "../actions/paginationActions.js";
+import { setCurrentPage } from "../actions/pagination.js";
 
 class Pagination extends React.Component {
   render() {
