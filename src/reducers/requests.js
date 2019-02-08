@@ -4,70 +4,70 @@ const requestsDefaults = [
     satName: "Alderan",
     longitude: 4934.539,
     latitude: 34943.023,
-    status: "new"
+    done: false
   },
   {
     id: 1,
     satName: "Bespin",
     longitude: 249809.342,
     latitude: 98342.247,
-    status: "new"
+    done: false
   },
   {
     id: 2,
     satName: "Coruscant",
     longitude: 23634.453,
     latitude: 18374.909,
-    status: "new"
+    done: false
   },
   {
     id: 3,
     satName: "Dagobah",
     longitude: 69529.348,
     latitude: 463290.236,
-    status: "new"
+    done: false
   },
   {
     id: 4,
     satName: "Hoth",
     longitude: 12843.394,
     latitude: 423673.634,
-    status: "new"
+    done: false
   },
   {
     id: 5,
     satName: "Kashyyyk",
     longitude: 56932.893,
     latitude: 484893.208,
-    status: "new"
+    done: false
   },
   {
     id: 6,
     satName: "Naboo",
     longitude: 789644.873,
     latitude: 125423.026,
-    status: "new"
+    done: false
   },
   {
     id: 7,
     satName: "Tatooine",
     longitude: 356983.348,
     latitude: 153389.092,
-    status: "new"
+    done: false
   },
   {
     id: 8,
     satName: "Yavin",
     longitude: 934732.342,
     latitude: 175834.037,
-    status: "new"
+    done: false
   },
   {
     id: 9,
     satName: "Wobani",
     longitude: 754094.346,
     latitude: 5645343.056,
-    status: "new"
+    done: false
   }
 ];
 
@@ -81,9 +81,20 @@ const requestsReducer = (state = requestsDefaults, action) => {
           satName: action.satName,
           longitude: action.longitude,
           latitude: action.latitude,
-          status: "new"
+          done: false
         }
       ];
+    case "TOGGLE_DONE":
+      return state.map(request => {
+        if (request.id === action.id) {
+          return {
+            ...request,
+            done: !request.done
+          };
+        } else {
+          return request;
+        }
+      });
     default:
       return state;
   }

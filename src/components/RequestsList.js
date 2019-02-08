@@ -2,6 +2,7 @@ import React from "react";
 import Request from "./Request.js";
 import { connect } from "react-redux";
 import Pagination from "./Pagination.js";
+import { toggleDone } from "../actions/requests.js";
 
 class RequestsList extends React.Component {
   divideRequests = () => {
@@ -9,14 +10,17 @@ class RequestsList extends React.Component {
     let endIndex = this.props.currentPage * 5;
     return this.props.requests.slice(startIndex, endIndex);
   };
-
+  onChange = e => {
+    let id = Number(e.target.value);
+    this.props.toggleDone(id);
+  };
   render() {
     return (
       <div>
         <ul>
           {this.divideRequests().map(request => (
             <li key={request.id}>
-              <Request {...request} />
+              <Request {...request} onChange={this.onChange} />
             </li>
           ))}
         </ul>
@@ -34,4 +38,11 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(RequestsList);
+const mapDispatchToProps = dispatch => ({
+  toggleDone: id => dispatch(toggleDone(id))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(RequestsList);

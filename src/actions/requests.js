@@ -4,3 +4,8 @@ export const addRequest = (satName, longitude, latitude) => ({
   longitude,
   latitude
 });
+
+export const toggleDone = id => ({
+  type: "TOGGLE_DONE",
+  id
+});

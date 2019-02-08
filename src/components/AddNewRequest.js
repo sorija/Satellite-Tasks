@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import AddRequestForm from "./AddRequestForm.js";
-import { addRequest } from "../actions/addRequest.js";
+import { addRequest } from "../actions/requests.js";
 
 class AddNewRequest extends React.Component {
   constructor(props) {
