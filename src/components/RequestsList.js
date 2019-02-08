@@ -3,6 +3,7 @@ import Request from "./Request.js";
 import { connect } from "react-redux";
 import Pagination from "./Pagination.js";
 import { toggleDone } from "../actions/requests.js";
+import getFilteredRequests from "../selectors/requests.js";
 
 class RequestsList extends React.Component {
   divideRequests = () => {
@@ -33,13 +34,15 @@ class RequestsList extends React.Component {
 }
 const mapStateToProps = state => {
   return {
-    requests: state.requests,
+    requests: getFilteredRequests(state.requests, state.filters),
     currentPage: state.currentPage
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  toggleDone: id => dispatch(toggleDone(id))
+  toggleDone: id => dispatch(toggleDone(id)),
+  getFilteredRequests: (requests, filters) =>
+    dispatch(getFilteredRequests(requests, filters))
 });
 
 export default connect(

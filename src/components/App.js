@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import configureStore from "../configureStore.js";
 import RequestsList from "./RequestsList.js";
 import AddNewRequest from "./AddNewRequest.js";
+import RequestsFilter from "./RequestsFilter.js";
 import "../styles/App.css";
 
 const store = configureStore();
@@ -15,6 +16,7 @@ class App extends Component {
           <header className="App-header">
             <p>Hello Space!</p>
           </header>
+          <RequestsFilter />
           <AddNewRequest />
           <RequestsList />
         </div>

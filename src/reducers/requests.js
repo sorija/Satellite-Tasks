@@ -29,41 +29,62 @@ const requestsDefaults = [
   },
   {
     id: 4,
+    satName: "Dagobah",
+    longitude: 132487.843,
+    latitude: 876341.432,
+    done: false
+  },
+  {
+    id: 5,
     satName: "Hoth",
     longitude: 12843.394,
     latitude: 423673.634,
     done: false
   },
   {
-    id: 5,
+    id: 6,
     satName: "Kashyyyk",
     longitude: 56932.893,
     latitude: 484893.208,
     done: false
   },
   {
-    id: 6,
+    id: 7,
     satName: "Naboo",
     longitude: 789644.873,
     latitude: 125423.026,
     done: false
   },
   {
-    id: 7,
+    id: 8,
+    satName: "Naboo",
+    longitude: 402834.073,
+    latitude: 984283.056,
+    done: false
+  },
+  {
+    id: 9,
+    satName: "Naboo",
+    longitude: 673429.233,
+    latitude: 3467211.882,
+    done: false
+  },
+  {
+    id: 10,
     satName: "Tatooine",
     longitude: 356983.348,
     latitude: 153389.092,
     done: false
   },
   {
-    id: 8,
+    id: 11,
     satName: "Yavin",
     longitude: 934732.342,
     latitude: 175834.037,
     done: false
   },
   {
-    id: 9,
+    id: 12,
     satName: "Wobani",
     longitude: 754094.346,
     latitude: 5645343.056,
