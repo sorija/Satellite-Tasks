@@ -13,13 +13,19 @@ class RequestsList extends React.Component {
   render() {
     return (
       <div>
-        <ul>
-          {this.props.requests.map(request => (
-            <li key={request.id}>
-              <Request {...request} onChange={this.onChange} />
-            </li>
-          ))}
-        </ul>
+        {this.props.requests.length === 0 ? (
+          <div>
+            <span>No requests</span>
+          </div>
+        ) : (
+          <ul>
+            {this.props.requests.map(request => (
+              <li key={request.id}>
+                <Request {...request} onChange={this.onChange} />
+              </li>
+            ))}
+          </ul>
+        )}
         <footer>
           <Pagination />
         </footer>
