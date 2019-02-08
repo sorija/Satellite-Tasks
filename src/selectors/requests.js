@@ -1,19 +1,7 @@
-const getFilteredRequests = (requests, { text, status }) => {
-  return requests.filter(request => {
-    const textMatch = request.satName
-      .toLowerCase()
-      .includes(text.toLowerCase());
-    switch (status) {
-      case "all":
-        return textMatch;
-      case "new":
-        return textMatch && !request.done;
-      case "done":
-        return textMatch && request.done;
-      default:
-        throw TypeError("Invalid status");
-    }
-  });
+const getDividedRequests = (requests, currentPage) => {
+  let startIndex = (currentPage - 1) * 5;
+  let endIndex = currentPage * 5;
+  return requests.slice(startIndex, endIndex);
 };
 
-export default getFilteredRequests;
+export default getDividedRequests;
