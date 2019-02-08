@@ -1,5 +1,6 @@
 const filtersDefault = {
-  text: ""
+  text: "",
+  status: "all"
 };
 
 const filtersReducer = (state = filtersDefault, action) => {
@@ -8,6 +9,11 @@ const filtersReducer = (state = filtersDefault, action) => {
       return {
         ...state,
         text: action.text
+      };
+    case "SET_STATUS_FILTER":
+      return {
+        ...state,
+        status: action.status
       };
     default:
       return state;
