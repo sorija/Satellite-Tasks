@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Pagination component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Pagination
+    requests={
+      Array [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+      ]
+    }
+    setCurrentPage={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <button
+          disabled={false}
+          id="firstPageBtn"
+          onClick={[Function]}
+          type="button"
+        >
+          «
+        </button>,
+        <button
+          disabled={false}
+          id="prevPageBtn"
+          onClick={[Function]}
+          type="button"
+        >
+          &lt;
+        </button>,
+        Array [
+          <button
+            className="pageBtn"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            1
+          </button>,
+          <button
+            className="pageBtn"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            2
+          </button>,
+          <button
+            className="pageBtn"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            3
+          </button>,
+        ],
+        <button
+          disabled={false}
+          id="nextPageBtn"
+          onClick={[Function]}
+          type="button"
+        >
+          &gt;
+        </button>,
+        <button
+          disabled={false}
+          id="lastPageBtn"
+          onClick={[Function]}
+          type="button"
+        >
+          »
+        </button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "«",
+          "disabled": false,
+          "id": "firstPageBtn",
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "«",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "<",
+          "disabled": false,
+          "id": "prevPageBtn",
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "<",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": 1,
+          "className": "pageBtn",
+          "disabled": false,
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": 1,
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": 2,
+          "className": "pageBtn",
+          "disabled": false,
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": 2,
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": 3,
+          "className": "pageBtn",
+          "disabled": false,
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": 3,
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": ">",
+          "disabled": false,
+          "id": "nextPageBtn",
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": ">",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "»",
+          "disabled": false,
+          "id": "lastPageBtn",
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "»",
+        "type": "button",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <button
+            disabled={false}
+            id="firstPageBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            «
+          </button>,
+          <button
+            disabled={false}
+            id="prevPageBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            &lt;
+          </button>,
+          Array [
+            <button
+              className="pageBtn"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              1
+            </button>,
+            <button
+              className="pageBtn"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              2
+            </button>,
+            <button
+              className="pageBtn"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              3
+            </button>,
+          ],
+          <button
+            disabled={false}
+            id="nextPageBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            &gt;
+          </button>,
+          <button
+            disabled={false}
+            id="lastPageBtn"
+            onClick={[Function]}
+            type="button"
+          >
+            »
+          </button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "«",
+            "disabled": false,
+            "id": "firstPageBtn",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "«",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "<",
+            "disabled": false,
+            "id": "prevPageBtn",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "<",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": 1,
+            "className": "pageBtn",
+            "disabled": false,
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": 1,
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": 2,
+            "className": "pageBtn",
+            "disabled": false,
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": 2,
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": 3,
+            "className": "pageBtn",
+            "disabled": false,
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": 3,
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": ">",
+            "disabled": false,
+            "id": "nextPageBtn",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": ">",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "»",
+            "disabled": false,
+            "id": "lastPageBtn",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "»",
+          "type": "button",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

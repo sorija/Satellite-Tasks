@@ -1,0 +1,651 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders RequestsList with no request and a message 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RequestsList
+    requests={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <span>
+            No requests
+          </span>
+        </div>,
+        <footer>
+          <Connect(Pagination) />
+        </footer>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            No requests
+          </span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No requests",
+          },
+          "ref": null,
+          "rendered": "No requests",
+          "type": "span",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(Pagination) />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "footer",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <span>
+              No requests
+            </span>
+          </div>,
+          <footer>
+            <Connect(Pagination) />
+          </footer>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              No requests
+            </span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "No requests",
+            },
+            "ref": null,
+            "rendered": "No requests",
+            "type": "span",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(Pagination) />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "footer",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`renders RequestsList with requests 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RequestsList
+    requests={
+      Array [
+        Object {
+          "done": false,
+          "id": 0,
+          "latitude": 22222.22,
+          "longitude": 111.11,
+          "satName": "Name0",
+        },
+        Object {
+          "done": true,
+          "id": 1,
+          "latitude": 4444.444,
+          "longitude": 33333.33,
+          "satName": "Name1",
+        },
+        Object {
+          "done": false,
+          "id": 2,
+          "latitude": 66666.666,
+          "longitude": 555.555,
+          "satName": "Name2",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ul>
+          <li>
+            <Request
+              done={false}
+              id={0}
+              latitude={22222.22}
+              longitude={111.11}
+              onChange={[Function]}
+              satName="Name0"
+            />
+          </li>
+          <li>
+            <Request
+              done={true}
+              id={1}
+              latitude={4444.444}
+              longitude={33333.33}
+              onChange={[Function]}
+              satName="Name1"
+            />
+          </li>
+          <li>
+            <Request
+              done={false}
+              id={2}
+              latitude={66666.666}
+              longitude={555.555}
+              onChange={[Function]}
+              satName="Name2"
+            />
+          </li>
+        </ul>,
+        <footer>
+          <Connect(Pagination) />
+        </footer>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <Request
+                done={false}
+                id={0}
+                latitude={22222.22}
+                longitude={111.11}
+                onChange={[Function]}
+                satName="Name0"
+              />
+            </li>,
+            <li>
+              <Request
+                done={true}
+                id={1}
+                latitude={4444.444}
+                longitude={33333.33}
+                onChange={[Function]}
+                satName="Name1"
+              />
+            </li>,
+            <li>
+              <Request
+                done={false}
+                id={2}
+                latitude={66666.666}
+                longitude={555.555}
+                onChange={[Function]}
+                satName="Name2"
+              />
+            </li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Request
+                done={false}
+                id={0}
+                latitude={22222.22}
+                longitude={111.11}
+                onChange={[Function]}
+                satName="Name0"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "done": false,
+                "id": 0,
+                "latitude": 22222.22,
+                "longitude": 111.11,
+                "onChange": [Function],
+                "satName": "Name0",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Request
+                done={true}
+                id={1}
+                latitude={4444.444}
+                longitude={33333.33}
+                onChange={[Function]}
+                satName="Name1"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "done": true,
+                "id": 1,
+                "latitude": 4444.444,
+                "longitude": 33333.33,
+                "onChange": [Function],
+                "satName": "Name1",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Request
+                done={false}
+                id={2}
+                latitude={66666.666}
+                longitude={555.555}
+                onChange={[Function]}
+                satName="Name2"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "done": false,
+                "id": 2,
+                "latitude": 66666.666,
+                "longitude": 555.555,
+                "onChange": [Function],
+                "satName": "Name2",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(Pagination) />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "footer",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ul>
+            <li>
+              <Request
+                done={false}
+                id={0}
+                latitude={22222.22}
+                longitude={111.11}
+                onChange={[Function]}
+                satName="Name0"
+              />
+            </li>
+            <li>
+              <Request
+                done={true}
+                id={1}
+                latitude={4444.444}
+                longitude={33333.33}
+                onChange={[Function]}
+                satName="Name1"
+              />
+            </li>
+            <li>
+              <Request
+                done={false}
+                id={2}
+                latitude={66666.666}
+                longitude={555.555}
+                onChange={[Function]}
+                satName="Name2"
+              />
+            </li>
+          </ul>,
+          <footer>
+            <Connect(Pagination) />
+          </footer>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <Request
+                  done={false}
+                  id={0}
+                  latitude={22222.22}
+                  longitude={111.11}
+                  onChange={[Function]}
+                  satName="Name0"
+                />
+              </li>,
+              <li>
+                <Request
+                  done={true}
+                  id={1}
+                  latitude={4444.444}
+                  longitude={33333.33}
+                  onChange={[Function]}
+                  satName="Name1"
+                />
+              </li>,
+              <li>
+                <Request
+                  done={false}
+                  id={2}
+                  latitude={66666.666}
+                  longitude={555.555}
+                  onChange={[Function]}
+                  satName="Name2"
+                />
+              </li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Request
+                  done={false}
+                  id={0}
+                  latitude={22222.22}
+                  longitude={111.11}
+                  onChange={[Function]}
+                  satName="Name0"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "done": false,
+                  "id": 0,
+                  "latitude": 22222.22,
+                  "longitude": 111.11,
+                  "onChange": [Function],
+                  "satName": "Name0",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Request
+                  done={true}
+                  id={1}
+                  latitude={4444.444}
+                  longitude={33333.33}
+                  onChange={[Function]}
+                  satName="Name1"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "done": true,
+                  "id": 1,
+                  "latitude": 4444.444,
+                  "longitude": 33333.33,
+                  "onChange": [Function],
+                  "satName": "Name1",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Request
+                  done={false}
+                  id={2}
+                  latitude={66666.666}
+                  longitude={555.555}
+                  onChange={[Function]}
+                  satName="Name2"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "done": false,
+                  "id": 2,
+                  "latitude": 66666.666,
+                  "longitude": 555.555,
+                  "onChange": [Function],
+                  "satName": "Name2",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(Pagination) />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "footer",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

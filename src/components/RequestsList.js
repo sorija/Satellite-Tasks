@@ -6,7 +6,7 @@ import { toggleDone } from "../actions/requests.js";
 import getFilteredRequests from "../selectors/filters.js";
 import getDividedRequests from "../selectors/requests.js";
 
-class RequestsList extends React.Component {
+export class RequestsList extends React.Component {
   onChange = e => {
     this.props.toggleDone(Number(e.target.value));
   };

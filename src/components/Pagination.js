@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { setCurrentPage } from "../actions/pagination.js";
 
-class Pagination extends React.Component {
+export class Pagination extends React.Component {
   render() {
     const { currentPage, setCurrentPage } = this.props;
     // number of pages is equal to number of tasks divided by limit of tasks per page and rounded up
@@ -14,6 +14,7 @@ class Pagination extends React.Component {
     return (
       <React.Fragment>
         <button
+          id="firstPageBtn"
           type="button"
           disabled={currentPage === 1}
           onClick={() => setCurrentPage(1)}
@@ -21,6 +22,7 @@ class Pagination extends React.Component {
           &laquo;
         </button>
         <button
+          id="prevPageBtn"
           type="button"
           disabled={currentPage === 1}
           onClick={() => setCurrentPage(currentPage - 1)}
@@ -29,6 +31,7 @@ class Pagination extends React.Component {
         </button>
         {pagination.map(page => (
           <button
+            className="pageBtn"
             key={page}
             type="button"
             disabled={currentPage === page}
@@ -38,6 +41,7 @@ class Pagination extends React.Component {
           </button>
         ))}
         <button
+          id="nextPageBtn"
           type="button"
           disabled={currentPage === pagination.length}
           onClick={() => setCurrentPage(currentPage + 1)}
@@ -45,6 +49,7 @@ class Pagination extends React.Component {
           &gt;
         </button>
         <button
+          id="lastPageBtn"
           type="button"
           disabled={currentPage === pagination.length}
           onClick={() => setCurrentPage(pagination.length)}

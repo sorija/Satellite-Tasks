@@ -1,6 +1,6 @@
 import React from "react";
 
-class AddRequestForm extends React.Component {
+export class AddRequestForm extends React.Component {
   // using local state to track changes without modifying data before submitting
   constructor(props) {
     super(props);
@@ -14,7 +14,7 @@ class AddRequestForm extends React.Component {
     return !num || num.match(/^\d+(\.\d*)?$/);
   };
   onNameChange = e => {
-    // store the e.target.value in a variable or event will be nullified before the .setState fires
+    // store the e.target.value in a variable or event will be nullified before the .setState() fires
     const satName = e.target.value;
     this.setState(() => ({ satName }));
   };

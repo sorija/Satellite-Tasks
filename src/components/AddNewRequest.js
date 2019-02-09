@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import AddRequestForm from "./AddRequestForm.js";
 import { addRequest } from "../actions/requests.js";
 
-class AddNewRequest extends React.Component {
+export class AddNewRequest extends React.Component {
   constructor(props) {
     super(props);
     this.state = { addNew: false };

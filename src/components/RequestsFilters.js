@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { setTextFilter, setStatusFilter } from "../actions/filters.js";
 
-class RequestsFilter extends React.Component {
+export class RequestsFilters extends React.Component {
   onTextChange = e => {
     this.props.setTextFilter(e.target.value);
   };
@@ -41,4 +41,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(RequestsFilter);
+)(RequestsFilters);
