@@ -1,0 +1,15 @@
+.App {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.space {
+  background: url("../nebula-min.jpg") no-repeat;
+  background-size: cover;
+}
+figcaption {
+  color: $off-white;
+  font-size: 1rem;
+  margin: 1rem auto;
+}

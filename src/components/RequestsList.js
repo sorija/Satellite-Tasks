@@ -9,16 +9,17 @@ import getDividedRequests from "../selectors/requests.js";
 export class RequestsList extends React.Component {
   onChange = e => {
     this.props.toggleDone(Number(e.target.value));
+    e.target.parentNode.classList.toggle("request-done");
   };
   render() {
     return (
       <div>
         {this.props.requests.length === 0 ? (
-          <div>
-            <span>No requests</span>
+          <div className="no-requests">
+            <span>No requests available</span>
           </div>
         ) : (
-          <ul>
+          <ul className="requests-list-container">
             {this.props.requests.map(request => (
               <li key={request.id}>
                 <Request {...request} onChange={this.onChange} />

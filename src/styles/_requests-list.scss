@@ -1,0 +1,26 @@
+.requests-list-container {
+  display: grid;
+  grid-gap: $s-size;
+  grid-template-columns: minmax(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  list-style-type: none;
+  margin: $l-size $m-size;
+  padding: 0;
+  min-width: 90vw;
+}
+.no-requests {
+  color: purple;
+  font-size: $font-size-large;
+  margin-bottom: 20rem;
+  padding: $s-size;
+  text-align: center;
+}
+// desktop
+@media all and (min-width: $breakpoint) {
+  .requests-list-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $m-size;
+    min-width: 50vw;
+  }
+}

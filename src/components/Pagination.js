@@ -12,7 +12,7 @@ export class Pagination extends React.Component {
       (_, i) => i + 1
     );
     return (
-      <React.Fragment>
+      <div className="pages-nav">
         <button
           id="firstPageBtn"
           type="button"
@@ -56,7 +56,7 @@ export class Pagination extends React.Component {
         >
           &raquo;
         </button>
-      </React.Fragment>
+      </div>
     );
   }
 }

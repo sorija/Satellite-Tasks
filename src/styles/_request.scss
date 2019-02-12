@@ -1,0 +1,67 @@
+.request-container {
+  align-items: center;
+  background-color: #1a16288f;
+  border: 1rem double $khaki;
+  border-radius: 0.5rem;
+  box-shadow: $shadow;
+  color: $khaki;
+  display: grid;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  grid-template-areas:
+    "name coordinates status"
+    "name coordinates status";
+  grid-template-columns: 1fr 1fr 0.5fr;
+  height: 16vh;
+  min-height: 20vh;
+  min-width: 0;
+  letter-spacing: 1px;
+  padding: 0 $s-size;
+  text-align: center;
+}
+.sat-name {
+  color: #ff15b9bf;
+  font-size: $font-size-large;
+  margin-bottom: $m-size;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px $dark-grey;
+  text-transform: uppercase;
+}
+.name-and-id {
+  grid-area: name;
+}
+.request-id {
+  margin-top: 0;
+}
+.coordinates {
+  grid-area: coordinates;
+  min-height: 0;
+  text-shadow: 1px 1px $dark-grey;
+}
+.data {
+  font-size: $font-size-small;
+}
+.data-span {
+  color: $sea-green;
+  font-size: $font-size-small;
+}
+.request-status {
+  grid-area: status;
+  place-self: center;
+  -ms-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  -o-transform: scale(1.7);
+}
+.request-done {
+  border: 1rem double $sea-green;
+}
+//  desktop
+@media all and (min-width: $breakpoint) {
+  .request-container {
+    height: 12vh;
+    padding: 0 $m-size;
+  }
+  .data-span {
+    font-size: $font-size-medium;
+  }
+}

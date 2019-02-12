@@ -41,8 +41,9 @@ export class AddRequestForm extends React.Component {
   render() {
     const { satName, longitude, latitude } = this.state;
     return (
-      <form onSubmit={this.onSubmit}>
+      <form className="add-form" onSubmit={this.onSubmit}>
         <input
+          className="form-input"
           type="text"
           placeholder="Satellite's Name"
           value={satName}
@@ -50,18 +51,21 @@ export class AddRequestForm extends React.Component {
           autoFocus
         />
         <input
+          className="form-input"
           type="text"
           placeholder="Longitude"
           value={longitude}
           onChange={this.onLongitudeChange}
         />
         <input
+          className="form-input"
           type="text"
           placeholder="Latitude"
           value={latitude}
           onChange={this.onLatitudeChange}
         />
         <input
+          className="form-input form-input__btn"
           disabled={!satName || !longitude || !latitude}
           type="submit"
           value="Submit"

@@ -1,0 +1,22 @@
+.pages-nav {
+  display: flex;
+  justify-content: center;
+}
+.pages-nav button {
+  background-color: $dark-grey;
+  border: none;
+  color: $off-white;
+  margin: 0.5rem;
+  padding: 5px 10px;
+}
+.pages-nav button:disabled {
+  color: gray;
+}
+// hide page buttons to accomodate small screens
+.pageBtn {
+  display: none;
+
+  @media all and (min-width: $breakpoint) {
+    display: inline;
+  }
+}

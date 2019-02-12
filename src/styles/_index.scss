@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+}
+body {
+  background: radial-gradient(circle at bottom, #162128 0, black 100%);
+  color: $off-white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: $font-size-medium;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

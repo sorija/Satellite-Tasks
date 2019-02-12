@@ -1,0 +1,26 @@
+.add-request-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 30rem;
+}
+.add-request__btn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  background: transparent;
+  border: 1rem double $khaki;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: $khaki;
+  text-align: center;
+  text-shadow: 1px 1px $dark-grey;
+  transition: all 0.2s;
+}
+.add-request-btn:hover {
+  color: $off-white;
+  background-color: $sea-green;
+}

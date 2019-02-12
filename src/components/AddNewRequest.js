@@ -21,8 +21,10 @@ export class AddNewRequest extends React.Component {
       addRequestForm = <AddRequestForm onSubmit={this.onSubmit} />;
     }
     return (
-      <div>
-        <button onClick={this.handleAddClick}>NEW REQUEST</button>
+      <div className="add-request-container">
+        <button className="add-request__btn" onClick={this.handleAddClick}>
+          NEW REQUEST
+        </button>
         {addRequestForm}
       </div>
     );
