@@ -19,18 +19,33 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <div
-        className="App"
+        className="App space"
       >
-        <header
-          className="App-header"
-        >
-          <p>
-            Hello Space!
-          </p>
-        </header>
         <Connect(RequestsFilters) />
         <Connect(AddNewRequest) />
         <Connect(RequestsList) />
+        <figcaption>
+          Photo by
+           
+          <a
+            data-href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            NASA
+          </a>
+           
+          on 
+          <a
+            data-href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Unsplash
+          </a>
+        </figcaption>
       </div>,
       "store": Object {
         "dispatch": [Function],
@@ -47,71 +62,129 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header
-            className="App-header"
-          >
-            <p>
-              Hello Space!
-            </p>
-          </header>,
           <Connect(RequestsFilters) />,
           <Connect(AddNewRequest) />,
           <Connect(RequestsList) />,
+          <figcaption>
+            Photo by
+             
+            <a
+              data-href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              NASA
+            </a>
+             
+            on 
+            <a
+              data-href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Unsplash
+            </a>
+          </figcaption>,
         ],
-        "className": "App",
+        "className": "App space",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <p>
-              Hello Space!
-            </p>,
-            "className": "App-header",
+            "children": Array [
+              "Photo by",
+              " ",
+              <a
+                data-href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                NASA
+              </a>,
+              " ",
+              "on ",
+              <a
+                data-href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Unsplash
+              </a>,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Hello Space!",
+          "rendered": Array [
+            "Photo by",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "NASA",
+                "data-href": "https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                "href": "https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "NASA",
+              "type": "a",
             },
-            "ref": null,
-            "rendered": "Hello Space!",
-            "type": "p",
-          },
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+            " ",
+            "on ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Unsplash",
+                "data-href": "https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                "href": "https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "Unsplash",
+              "type": "a",
+            },
+          ],
+          "type": "figcaption",
         },
       ],
       "type": "div",
@@ -125,18 +198,33 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <div
-          className="App"
+          className="App space"
         >
-          <header
-            className="App-header"
-          >
-            <p>
-              Hello Space!
-            </p>
-          </header>
           <Connect(RequestsFilters) />
           <Connect(AddNewRequest) />
           <Connect(RequestsList) />
+          <figcaption>
+            Photo by
+             
+            <a
+              data-href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              NASA
+            </a>
+             
+            on 
+            <a
+              data-href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Unsplash
+            </a>
+          </figcaption>
         </div>,
         "store": Object {
           "dispatch": [Function],
@@ -153,71 +241,129 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <header
-              className="App-header"
-            >
-              <p>
-                Hello Space!
-              </p>
-            </header>,
             <Connect(RequestsFilters) />,
             <Connect(AddNewRequest) />,
             <Connect(RequestsList) />,
+            <figcaption>
+              Photo by
+               
+              <a
+                data-href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                NASA
+              </a>
+               
+              on 
+              <a
+                data-href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Unsplash
+              </a>
+            </figcaption>,
           ],
-          "className": "App",
+          "className": "App space",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <p>
-                Hello Space!
-              </p>,
-              "className": "App-header",
+              "children": Array [
+                "Photo by",
+                " ",
+                <a
+                  data-href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  href="https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  NASA
+                </a>,
+                " ",
+                "on ",
+                <a
+                  data-href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  href="https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Unsplash
+                </a>,
+              ],
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Hello Space!",
+            "rendered": Array [
+              "Photo by",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NASA",
+                  "data-href": "https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                  "href": "https://unsplash.com/photos/rTZW4f02zY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "NASA",
+                "type": "a",
               },
-              "ref": null,
-              "rendered": "Hello Space!",
-              "type": "p",
-            },
-            "type": "header",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+              " ",
+              "on ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Unsplash",
+                  "data-href": "https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                  "href": "https://unsplash.com/search/photos/nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "Unsplash",
+                "type": "a",
+              },
+            ],
+            "type": "figcaption",
           },
         ],
         "type": "div",

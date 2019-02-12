@@ -1,7 +1,7 @@
 const requestsDefaults = [
   {
     id: 0,
-    satName: "Alderan",
+    satName: "Alderaan",
     longitude: 4934.539,
     latitude: 34943.023,
     done: false

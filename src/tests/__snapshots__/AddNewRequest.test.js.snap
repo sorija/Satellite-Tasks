@@ -20,12 +20,14 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <button
+          className="add-request__btn"
           onClick={[Function]}
         >
           NEW REQUEST
         </button>,
         undefined,
       ],
+      "className": "add-request-container",
     },
     "ref": null,
     "rendered": Array [
@@ -35,6 +37,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "NEW REQUEST",
+          "className": "add-request__btn",
           "onClick": [Function],
         },
         "ref": null,
@@ -53,12 +56,14 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <button
+            className="add-request__btn"
             onClick={[Function]}
           >
             NEW REQUEST
           </button>,
           undefined,
         ],
+        "className": "add-request-container",
       },
       "ref": null,
       "rendered": Array [
@@ -68,6 +73,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "NEW REQUEST",
+            "className": "add-request__btn",
             "onClick": [Function],
           },
           "ref": null,

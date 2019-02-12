@@ -28,154 +28,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <input
-          onChange={[Function]}
-          placeholder="Search By Satellite..."
-          type="text"
-          value="Name0"
-        />,
-        <label
-          htmlFor="status"
+        <div
+          className="select-container"
         >
-          Show: 
-        </label>,
-        <select
-          id="status"
-          onChange={[Function]}
-        >
-          <option
-            value="all"
-          >
-            All
-          </option>
-          <option
-            value="new"
-          >
-            New
-          </option>
-          <option
-            value="done"
-          >
-            Done
-          </option>
-        </select>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "onChange": [Function],
-          "placeholder": "Search By Satellite...",
-          "type": "text",
-          "value": "Name0",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Show: ",
-          "htmlFor": "status",
-        },
-        "ref": null,
-        "rendered": "Show: ",
-        "type": "label",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <option
-              value="all"
-            >
-              All
-            </option>,
-            <option
-              value="new"
-            >
-              New
-            </option>,
-            <option
-              value="done"
-            >
-              Done
-            </option>,
-          ],
-          "id": "status",
-          "onChange": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "All",
-              "value": "all",
-            },
-            "ref": null,
-            "rendered": "All",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "New",
-              "value": "new",
-            },
-            "ref": null,
-            "rendered": "New",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Done",
-              "value": "done",
-            },
-            "ref": null,
-            "rendered": "Done",
-            "type": "option",
-          },
-        ],
-        "type": "select",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <input
-            onChange={[Function]}
-            placeholder="Search By Satellite..."
-            type="text"
-            value="Name0"
-          />,
           <label
             htmlFor="status"
           >
             Show: 
-          </label>,
+          </label>
           <select
             id="status"
             onChange={[Function]}
@@ -195,8 +55,200 @@ ShallowWrapper {
             >
               Done
             </option>
-          </select>,
+          </select>
+        </div>,
+        <input
+          id="text-filter"
+          onChange={[Function]}
+          placeholder="Search By Satellite..."
+          type="text"
+          value="Name0"
+        />,
+      ],
+      "className": "filters-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              htmlFor="status"
+            >
+              Show: 
+            </label>,
+            <select
+              id="status"
+              onChange={[Function]}
+            >
+              <option
+                value="all"
+              >
+                All
+              </option>
+              <option
+                value="new"
+              >
+                New
+              </option>
+              <option
+                value="done"
+              >
+                Done
+              </option>
+            </select>,
+          ],
+          "className": "select-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Show: ",
+              "htmlFor": "status",
+            },
+            "ref": null,
+            "rendered": "Show: ",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  value="all"
+                >
+                  All
+                </option>,
+                <option
+                  value="new"
+                >
+                  New
+                </option>,
+                <option
+                  value="done"
+                >
+                  Done
+                </option>,
+              ],
+              "id": "status",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "All",
+                  "value": "all",
+                },
+                "ref": null,
+                "rendered": "All",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "New",
+                  "value": "new",
+                },
+                "ref": null,
+                "rendered": "New",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Done",
+                  "value": "done",
+                },
+                "ref": null,
+                "rendered": "Done",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
         ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "id": "text-filter",
+          "onChange": [Function],
+          "placeholder": "Search By Satellite...",
+          "type": "text",
+          "value": "Name0",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="select-container"
+          >
+            <label
+              htmlFor="status"
+            >
+              Show: 
+            </label>
+            <select
+              id="status"
+              onChange={[Function]}
+            >
+              <option
+                value="all"
+              >
+                All
+              </option>
+              <option
+                value="new"
+              >
+                New
+              </option>
+              <option
+                value="done"
+              >
+                Done
+              </option>
+            </select>
+          </div>,
+          <input
+            id="text-filter"
+            onChange={[Function]}
+            placeholder="Search By Satellite..."
+            type="text"
+            value="Name0"
+          />,
+        ],
+        "className": "filters-container",
       },
       "ref": null,
       "rendered": Array [
@@ -205,51 +257,34 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "onChange": [Function],
-            "placeholder": "Search By Satellite...",
-            "type": "text",
-            "value": "Name0",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Show: ",
-            "htmlFor": "status",
-          },
-          "ref": null,
-          "rendered": "Show: ",
-          "type": "label",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              <option
-                value="all"
+              <label
+                htmlFor="status"
               >
-                All
-              </option>,
-              <option
-                value="new"
+                Show: 
+              </label>,
+              <select
+                id="status"
+                onChange={[Function]}
               >
-                New
-              </option>,
-              <option
-                value="done"
-              >
-                Done
-              </option>,
+                <option
+                  value="all"
+                >
+                  All
+                </option>
+                <option
+                  value="new"
+                >
+                  New
+                </option>
+                <option
+                  value="done"
+                >
+                  Done
+                </option>
+              </select>,
             ],
-            "id": "status",
-            "onChange": [Function],
+            "className": "select-container",
           },
           "ref": null,
           "rendered": Array [
@@ -258,39 +293,96 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "All",
-                "value": "all",
+                "children": "Show: ",
+                "htmlFor": "status",
               },
               "ref": null,
-              "rendered": "All",
-              "type": "option",
+              "rendered": "Show: ",
+              "type": "label",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "New",
-                "value": "new",
+                "children": Array [
+                  <option
+                    value="all"
+                  >
+                    All
+                  </option>,
+                  <option
+                    value="new"
+                  >
+                    New
+                  </option>,
+                  <option
+                    value="done"
+                  >
+                    Done
+                  </option>,
+                ],
+                "id": "status",
+                "onChange": [Function],
               },
               "ref": null,
-              "rendered": "New",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Done",
-                "value": "done",
-              },
-              "ref": null,
-              "rendered": "Done",
-              "type": "option",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "All",
+                    "value": "all",
+                  },
+                  "ref": null,
+                  "rendered": "All",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "New",
+                    "value": "new",
+                  },
+                  "ref": null,
+                  "rendered": "New",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Done",
+                    "value": "done",
+                  },
+                  "ref": null,
+                  "rendered": "Done",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
             },
           ],
-          "type": "select",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "id": "text-filter",
+            "onChange": [Function],
+            "placeholder": "Search By Satellite...",
+            "type": "text",
+            "value": "Name0",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
         },
       ],
       "type": "div",

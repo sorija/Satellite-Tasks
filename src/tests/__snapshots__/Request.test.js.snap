@@ -25,29 +25,57 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <span>
-          0
-        </span>,
-        <p>
-          Name: 
-          <span>
+        <div
+          className="name-and-id"
+        >
+          <p
+            className="request-id data"
+          >
+            ID: 
+            <span
+              className="data-span"
+            >
+              0
+            </span>
+          </p>
+          <p
+            className="sat-name"
+          >
             Name0
-          </span>
-        </p>,
-        <div>
-          <span>
-            111.11
-          </span>
-          <span>
-            22222.22
-          </span>
+          </p>
+        </div>,
+        <div
+          className="coordinates"
+        >
+          <p
+            className="lat data"
+          >
+            Latitude: 
+            <span
+              className="data-span"
+            >
+              22222.22
+            </span>
+          </p>
+          <p
+            className="lon data"
+          >
+            Longitude: 
+            <span
+              className="data-span"
+            >
+              111.11
+            </span>
+          </p>
         </div>,
         <input
           checked={false}
+          className="request-status data"
           type="checkbox"
           value={0}
         />,
       ],
+      "className": "request-container",
     },
     "ref": null,
     "rendered": Array [
@@ -56,40 +84,74 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 0,
-        },
-        "ref": null,
-        "rendered": 0,
-        "type": "span",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": Array [
-            "Name: ",
-            <span>
+            <p
+              className="request-id data"
+            >
+              ID: 
+              <span
+                className="data-span"
+              >
+                0
+              </span>
+            </p>,
+            <p
+              className="sat-name"
+            >
               Name0
-            </span>,
+            </p>,
           ],
+          "className": "name-and-id",
         },
         "ref": null,
         "rendered": Array [
-          "Name: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "ID: ",
+                <span
+                  className="data-span"
+                >
+                  0
+                </span>,
+              ],
+              "className": "request-id data",
+            },
+            "ref": null,
+            "rendered": Array [
+              "ID: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "data-span",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
+            ],
+            "type": "p",
+          },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": "Name0",
+              "className": "sat-name",
             },
             "ref": null,
             "rendered": "Name0",
-            "type": "span",
+            "type": "p",
           },
         ],
-        "type": "p",
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -97,13 +159,28 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <span>
-              111.11
-            </span>,
-            <span>
-              22222.22
-            </span>,
+            <p
+              className="lat data"
+            >
+              Latitude: 
+              <span
+                className="data-span"
+              >
+                22222.22
+              </span>
+            </p>,
+            <p
+              className="lon data"
+            >
+              Longitude: 
+              <span
+                className="data-span"
+              >
+                111.11
+              </span>
+            </p>,
           ],
+          "className": "coordinates",
         },
         "ref": null,
         "rendered": Array [
@@ -112,22 +189,66 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": 111.11,
+              "children": Array [
+                "Latitude: ",
+                <span
+                  className="data-span"
+                >
+                  22222.22
+                </span>,
+              ],
+              "className": "lat data",
             },
             "ref": null,
-            "rendered": 111.11,
-            "type": "span",
+            "rendered": Array [
+              "Latitude: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 22222.22,
+                  "className": "data-span",
+                },
+                "ref": null,
+                "rendered": 22222.22,
+                "type": "span",
+              },
+            ],
+            "type": "p",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": 22222.22,
+              "children": Array [
+                "Longitude: ",
+                <span
+                  className="data-span"
+                >
+                  111.11
+                </span>,
+              ],
+              "className": "lon data",
             },
             "ref": null,
-            "rendered": 22222.22,
-            "type": "span",
+            "rendered": Array [
+              "Longitude: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 111.11,
+                  "className": "data-span",
+                },
+                "ref": null,
+                "rendered": 111.11,
+                "type": "span",
+              },
+            ],
+            "type": "p",
           },
         ],
         "type": "div",
@@ -138,6 +259,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "checked": false,
+          "className": "request-status data",
           "onChange": undefined,
           "type": "checkbox",
           "value": 0,
@@ -156,29 +278,57 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <span>
-            0
-          </span>,
-          <p>
-            Name: 
-            <span>
+          <div
+            className="name-and-id"
+          >
+            <p
+              className="request-id data"
+            >
+              ID: 
+              <span
+                className="data-span"
+              >
+                0
+              </span>
+            </p>
+            <p
+              className="sat-name"
+            >
               Name0
-            </span>
-          </p>,
-          <div>
-            <span>
-              111.11
-            </span>
-            <span>
-              22222.22
-            </span>
+            </p>
+          </div>,
+          <div
+            className="coordinates"
+          >
+            <p
+              className="lat data"
+            >
+              Latitude: 
+              <span
+                className="data-span"
+              >
+                22222.22
+              </span>
+            </p>
+            <p
+              className="lon data"
+            >
+              Longitude: 
+              <span
+                className="data-span"
+              >
+                111.11
+              </span>
+            </p>
           </div>,
           <input
             checked={false}
+            className="request-status data"
             type="checkbox"
             value={0}
           />,
         ],
+        "className": "request-container",
       },
       "ref": null,
       "rendered": Array [
@@ -187,40 +337,74 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 0,
-          },
-          "ref": null,
-          "rendered": 0,
-          "type": "span",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              "Name: ",
-              <span>
+              <p
+                className="request-id data"
+              >
+                ID: 
+                <span
+                  className="data-span"
+                >
+                  0
+                </span>
+              </p>,
+              <p
+                className="sat-name"
+              >
                 Name0
-              </span>,
+              </p>,
             ],
+            "className": "name-and-id",
           },
           "ref": null,
           "rendered": Array [
-            "Name: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "ID: ",
+                  <span
+                    className="data-span"
+                  >
+                    0
+                  </span>,
+                ],
+                "className": "request-id data",
+              },
+              "ref": null,
+              "rendered": Array [
+                "ID: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "data-span",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": "Name0",
+                "className": "sat-name",
               },
               "ref": null,
               "rendered": "Name0",
-              "type": "span",
+              "type": "p",
             },
           ],
-          "type": "p",
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -228,13 +412,28 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <span>
-                111.11
-              </span>,
-              <span>
-                22222.22
-              </span>,
+              <p
+                className="lat data"
+              >
+                Latitude: 
+                <span
+                  className="data-span"
+                >
+                  22222.22
+                </span>
+              </p>,
+              <p
+                className="lon data"
+              >
+                Longitude: 
+                <span
+                  className="data-span"
+                >
+                  111.11
+                </span>
+              </p>,
             ],
+            "className": "coordinates",
           },
           "ref": null,
           "rendered": Array [
@@ -243,22 +442,66 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 111.11,
+                "children": Array [
+                  "Latitude: ",
+                  <span
+                    className="data-span"
+                  >
+                    22222.22
+                  </span>,
+                ],
+                "className": "lat data",
               },
               "ref": null,
-              "rendered": 111.11,
-              "type": "span",
+              "rendered": Array [
+                "Latitude: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 22222.22,
+                    "className": "data-span",
+                  },
+                  "ref": null,
+                  "rendered": 22222.22,
+                  "type": "span",
+                },
+              ],
+              "type": "p",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 22222.22,
+                "children": Array [
+                  "Longitude: ",
+                  <span
+                    className="data-span"
+                  >
+                    111.11
+                  </span>,
+                ],
+                "className": "lon data",
               },
               "ref": null,
-              "rendered": 22222.22,
-              "type": "span",
+              "rendered": Array [
+                "Longitude: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 111.11,
+                    "className": "data-span",
+                  },
+                  "ref": null,
+                  "rendered": 111.11,
+                  "type": "span",
+                },
+              ],
+              "type": "p",
             },
           ],
           "type": "div",
@@ -269,6 +512,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "checked": false,
+            "className": "request-status data",
             "onChange": undefined,
             "type": "checkbox",
             "value": 0,

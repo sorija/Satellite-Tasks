@@ -21,9 +21,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
+        <div
+          className="no-requests"
+        >
           <span>
-            No requests
+            No requests available
           </span>
         </div>,
         <footer>
@@ -39,8 +41,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <span>
-            No requests
+            No requests available
           </span>,
+          "className": "no-requests",
         },
         "ref": null,
         "rendered": Object {
@@ -48,10 +51,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "No requests",
+            "children": "No requests available",
           },
           "ref": null,
-          "rendered": "No requests",
+          "rendered": "No requests available",
           "type": "span",
         },
         "type": "div",
@@ -85,9 +88,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
+          <div
+            className="no-requests"
+          >
             <span>
-              No requests
+              No requests available
             </span>
           </div>,
           <footer>
@@ -103,8 +108,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <span>
-              No requests
+              No requests available
             </span>,
+            "className": "no-requests",
           },
           "ref": null,
           "rendered": Object {
@@ -112,10 +118,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "No requests",
+              "children": "No requests available",
             },
             "ref": null,
-            "rendered": "No requests",
+            "rendered": "No requests available",
             "type": "span",
           },
           "type": "div",
@@ -212,7 +218,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <ul>
+        <ul
+          className="requests-list-container"
+        >
           <li>
             <Request
               done={false}
@@ -288,6 +296,7 @@ ShallowWrapper {
               />
             </li>,
           ],
+          "className": "requests-list-container",
         },
         "ref": null,
         "rendered": Array [
@@ -422,7 +431,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ul>
+          <ul
+            className="requests-list-container"
+          >
             <li>
               <Request
                 done={false}
@@ -498,6 +509,7 @@ ShallowWrapper {
                 />
               </li>,
             ],
+            "className": "requests-list-container",
           },
           "ref": null,
           "rendered": Array [

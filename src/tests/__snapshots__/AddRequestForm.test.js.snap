@@ -21,29 +21,34 @@ ShallowWrapper {
       "children": Array [
         <input
           autoFocus={true}
+          className="form-input"
           onChange={[Function]}
           placeholder="Satellite's Name"
           type="text"
           value=""
         />,
         <input
+          className="form-input"
           onChange={[Function]}
           placeholder="Longitude"
           type="text"
           value=""
         />,
         <input
+          className="form-input"
           onChange={[Function]}
           placeholder="Latitude"
           type="text"
           value=""
         />,
         <input
+          className="form-input form-input__btn"
           disabled={true}
           type="submit"
           value="Submit"
         />,
       ],
+      "className": "add-form",
       "onSubmit": [Function],
     },
     "ref": null,
@@ -54,6 +59,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "autoFocus": true,
+          "className": "form-input",
           "onChange": [Function],
           "placeholder": "Satellite's Name",
           "type": "text",
@@ -68,6 +74,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "form-input",
           "onChange": [Function],
           "placeholder": "Longitude",
           "type": "text",
@@ -82,6 +89,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "form-input",
           "onChange": [Function],
           "placeholder": "Latitude",
           "type": "text",
@@ -96,6 +104,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "form-input form-input__btn",
           "disabled": true,
           "type": "submit",
           "value": "Submit",
@@ -116,29 +125,34 @@ ShallowWrapper {
         "children": Array [
           <input
             autoFocus={true}
+            className="form-input"
             onChange={[Function]}
             placeholder="Satellite's Name"
             type="text"
             value=""
           />,
           <input
+            className="form-input"
             onChange={[Function]}
             placeholder="Longitude"
             type="text"
             value=""
           />,
           <input
+            className="form-input"
             onChange={[Function]}
             placeholder="Latitude"
             type="text"
             value=""
           />,
           <input
+            className="form-input form-input__btn"
             disabled={true}
             type="submit"
             value="Submit"
           />,
         ],
+        "className": "add-form",
         "onSubmit": [Function],
       },
       "ref": null,
@@ -149,6 +163,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "autoFocus": true,
+            "className": "form-input",
             "onChange": [Function],
             "placeholder": "Satellite's Name",
             "type": "text",
@@ -163,6 +178,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "form-input",
             "onChange": [Function],
             "placeholder": "Longitude",
             "type": "text",
@@ -177,6 +193,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "form-input",
             "onChange": [Function],
             "placeholder": "Latitude",
             "type": "text",
@@ -191,6 +208,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "form-input form-input__btn",
             "disabled": true,
             "type": "submit",
             "value": "Submit",

@@ -34,7 +34,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
       "children": Array [
         <button
@@ -96,6 +96,7 @@ ShallowWrapper {
           »
         </button>,
       ],
+      "className": "pages-nav",
     },
     "ref": null,
     "rendered": Array [
@@ -205,13 +206,13 @@ ShallowWrapper {
         "type": "button",
       },
     ],
-    "type": Symbol(react.fragment),
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
         "children": Array [
           <button
@@ -273,6 +274,7 @@ ShallowWrapper {
             »
           </button>,
         ],
+        "className": "pages-nav",
       },
       "ref": null,
       "rendered": Array [
@@ -382,7 +384,7 @@ ShallowWrapper {
           "type": "button",
         },
       ],
-      "type": Symbol(react.fragment),
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
